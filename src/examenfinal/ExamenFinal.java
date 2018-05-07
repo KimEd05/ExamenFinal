@@ -11,11 +11,20 @@ package examenfinal;
  */
 public class ExamenFinal {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ListaCircularSimple listaCircular = new ListaCircularSimple();
+       
+        System.out.println("--- Lista Circular Simple ---");
+        
+        listaCircular.insertarFinal(0, "Palabra 1");
+        listaCircular.insertarFinal(1, "Prueba");
+        listaCircular.insertarInicio(2, "Kimberly");
+        listaCircular.insertarReferencia(0, 5, "Modificación");
+        listaCircular.insertarPosicion(0, 0, "Aparecerá al inicio");
+        listaCircular.listar();
+        
+        listaCircular.eliminarPorPosicion(0);
+        listaCircular.listar();
     }
     
 }
