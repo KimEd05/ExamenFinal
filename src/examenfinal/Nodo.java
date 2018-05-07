@@ -10,15 +10,18 @@ package examenfinal;
  * @author kimel
  */
 public class Nodo {
-    private int numero;
-    private String palabra;
-    private Nodo siguiente;
-    
-    public void Nodo(){
-    this.numero = 0;
-    this.palabra = null;
-    this.siguiente = null;
-    }
+   //Variables para guardar información 
+   private int numero;
+   private String palabra;
+   //Enlace entre nodos
+   private Nodo siguiente;
+   
+   //Constructor de la clase
+   public Nodo(){
+       this.numero = 0;
+       this.palabra = null;
+       this.siguiente = null;
+   }
 
     public int getNumero() {
         return numero;
@@ -44,6 +47,6 @@ public class Nodo {
         this.siguiente = siguiente;
     }
     
-    
-    
+   
+   
 }
