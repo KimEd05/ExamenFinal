@@ -186,6 +186,7 @@ public class ListaCircularSimple {
         if(posicion >=0 && posicion<tamaño){
             if(posicion == 0){
                 inicio.setNumero(numero);
+                inicio.setPalabra(palabra);
             }
             else{
                 Nodo aux = inicio;
